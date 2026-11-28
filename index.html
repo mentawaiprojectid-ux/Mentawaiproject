@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#090C0B" id="metaThemeColor" />
+  <meta name="description" content="Mentawai Project — Gerakan independen anak muda Mentawai: ruang belajar, bercerita, dan bertumbuh bersama." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mentawai Project — Generasi Baru Mentawai" />
+  <meta property="og:description" content="Gerakan independen anak muda Mentawai: ruang belajar, bercerita, dan bertumbuh bersama. #GenerasiBaruMentawai" />
+  <meta property="og:image" content="./icon-512.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Mentawai" />
+  <title>Mentawai Project — Generasi Baru Mentawai</title>
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" type="image/png" href="./icon-192.png" />
+  <link rel="apple-touch-icon" href="./icon-512.png" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Ambient Soft Emerald & Monochrome Mesh Backdrop -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="orb orb-emerald-1"></div>
+    <div class="orb orb-emerald-2"></div>
+    <div class="orb orb-white-glow"></div>
+    <div class="noise-overlay"></div>
+  </div>
+
+  <!-- Top Floating Glass Navigation -->
+  <header class="top-nav-wrap">
+    <nav class="top-nav glass-pill" aria-label="Navigasi Utama">
+      <button type="button" class="brand-trigger" id="logoTripleTrigger" title="Mentawai Project" aria-label="Logo Mentawai Project">
+        <img src="./logo-light.png" alt="Logo Mentawai Project" class="brand-logo" id="brandLogoImg" />
+        <span class="brand-badge-dot" id="adminActiveDot" hidden title="Mode Admin Aktif"></span>
+      </button>
+
+      <div class="nav-links" id="desktopNavLinks">
+        <a href="#tentang" class="nav-link" data-sec="tentang">Tentang</a>
+        <a href="#visi-misi" class="nav-link" data-sec="visi-misi">Visi & Misi</a>
+        <a href="#program" class="nav-link" data-sec="program">Program</a>
+        <a href="#konten" class="nav-link" data-sec="konten">Konten</a>
+        <a href="#produk" class="nav-link" data-sec="produk">Produk</a>
+        <a href="#tim" class="nav-link" data-sec="tim">Penggerak</a>
+        <a href="#komunitas" class="nav-link" data-sec="komunitas">Komunitas</a>
+      </div>
+
+      <div class="nav-actions">
+        <button type="button" class="icon-btn glass-mini" id="themeToggleBtn" aria-label="Ganti Tema Hitam / Putih" title="Ganti Tema Hitam / Putih">
+          <svg id="themeIconSun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden>
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+          </svg>
+          <svg id="themeIconMoon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+          </svg>
+        </button>
+
+        <a href="#komunitas" class="btn-emerald-pill nav-cta">
+          <span>Gabung</span>
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="beranda">
+      <div class="hero-card glass-surface">
+        <div class="hero-watermark" aria-hidden="true"></div>
+        <div class="hero-status-row">
+          <span class="emerald-chip">
+            <span class="pulse-dot"></span>
+            <span id="heroBadgeText">GERAKAN INDEPENDEN ANAK MUDA</span>
+          </span>
+          <span class="hashtag-pill" id="heroHashtagText">#GenerasiBaruMentawai</span>
+        </div>
+
+        <h1 class="hero-title" id="heroTitleText">
+          Membantu anak muda Mentawai untuk <span class="text-emerald-soft">level-up</span> melalui ruang belajar, bercerita, dan bertumbuh bersama.
+        </h1>
+
+        <p class="hero-subtitle" id="heroSubtitleText">
+          Digagas dan dijalankan secara swadaya oleh anak muda Mentawai — dimulai dari langkah-langkah kecil yang konsisten, membuka akses wawasan, literasi, dan komunitas yang saling menguatkan.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="https://discord.gg/sgAwpjBXr" target="_blank" rel="noopener noreferrer" class="btn-discord-3d" id="heroDiscordBtn">
+            <span class="discord-3d-badge" aria-hidden="true">
+              <!-- Custom 3D-rendered Discord Clyde Emblem SVG -->
+              <svg viewBox="0 0 64 64" width="32" height="32" class="icon-3d-svg">
+                <defs>
+                  <linearGradient id="discBody" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#8EA1FF"/>
+                    <stop offset="50%" stop-color="#5865F2"/>
+                    <stop offset="100%" stop-color="#3540B8"/>
+                  </linearGradient>
+                  <linearGradient id="discHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.65"/>
+                    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+                  </linearGradient>
+                  <filter id="discShadow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#1A2066" flood-opacity="0.5"/>
+                  </filter>
+                </defs>
+                <rect x="6" y="6" width="52" height="52" rx="16" fill="url(#discBody)" filter="url(#discShadow)"/>
+                <rect x="8" y="8" width="48" height="24" rx="14" fill="url(#discHighlight)"/>
+                <path d="M41.6 22.1a24.8 24.8 0 0 0-6.1-1.9c-.3.5-.6 1.1-.8 1.6a23 23 0 0 0-6.8 0 16 16 0 0 0-.8-1.6 24.8 24.8 0 0 0-6.1 1.9c-3.9 5.8-4.9 11.4-4.4 17a25 25 0 0 0 7.5 3.8c.6-.8 1.1-1.7 1.6-2.6-.9-.3-1.7-.7-2.5-1.2.2-.2.4-.3.6-.5 4.8 2.2 10.1 2.2 14.8 0 .2.2.4.3.6.5-.8.5-1.6.9-2.5 1.2.5.9 1 1.8 1.6 2.6a25 25 0 0 0 7.5-3.8c.6-6.5-1-12.1-4.6-17ZM26.8 35.6c-1.5 0-2.7-1.4-2.7-3s1.2-3 2.7-3 2.7 1.4 2.7 3-1.2 3-2.7 3Zm10.4 0c-1.5 0-2.7-1.4-2.7-3s1.2-3 2.7-3 2.7 1.4 2.7 3-1.2 3-2.7 3Z" fill="#FFFFFF"/>
+              </svg>
+            </span>
+            <div class="btn-3d-label">
+              <span class="btn-3d-top">Server Komunitas</span>
+              <span class="btn-3d-main">Gabung Discord</span>
+            </div>
+          </a>
+
+          <a href="https://lynk.id/mentawaiproject.id" target="_blank" rel="noopener noreferrer" class="btn-lynk-3d" id="heroLynkBtn">
+            <span class="lynk-3d-badge" aria-hidden="true">
+              <!-- Custom 3D-rendered Lynk.id Chain-Link Emblem SVG -->
+              <svg viewBox="0 0 64 64" width="32" height="32" class="icon-3d-svg">
+                <defs>
+                  <linearGradient id="lynkBody" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#6EE7B7"/>
+                    <stop offset="50%" stop-color="#10B981"/>
+                    <stop offset="100%" stop-color="#047857"/>
+                  </linearGradient>
+                  <linearGradient id="lynkTop" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.6"/>
+                    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+                  </linearGradient>
+                  <filter id="lynkShadow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#022C22" flood-opacity="0.5"/>
+                  </filter>
+                </defs>
+                <rect x="6" y="6" width="52" height="52" rx="16" fill="url(#lynkBody)" filter="url(#lynkShadow)"/>
+                <rect x="8" y="8" width="48" height="24" rx="14" fill="url(#lynkTop)"/>
+                <g fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round">
+                  <path d="M27 37l-4.5 4.5a6.4 6.4 0 0 1-9-9L21 25a6.4 6.4 0 0 1 9 0"/>
+                  <path d="M37 27l4.5-4.5a6.4 6.4 0 0 1 9 9L43 39a6.4 6.4 0 0 1-9 0"/>
+                  <line x1="25" y1="39" x2="39" y2="25"/>
+                </g>
+              </svg>
+            </span>
+            <div class="btn-3d-label">
+              <span class="btn-3d-top">Katalog & Tautan Resmi</span>
+              <span class="btn-3d-main">Buka Lynk.id</span>
+            </div>
+          </a>
+
+          <a href="#program" class="btn-glass-secondary">
+            <span>Eksplor Program</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+        </div>
+
+        <!-- Live Reach / Metrics Strip (Editable via Admin Panel) -->
+        <div class="metrics-grid" id="metricsGrid"></div>
+      </div>
+    </section>
+
+    <!-- TENTANG & STATUS PERGERAKAN -->
+    <section class="content-section" id="tentang">
+      <div class="section-header">
+        <span class="section-eyebrow">IDENTITAS & LATAR BELAKANG</span>
+        <h2 class="section-title">Tentang Mentawai Project</h2>
+      </div>
+
+      <div class="about-grid">
+        <article class="glass-card about-main-card">
+          <p class="about-lead" id="aboutLeadText"></p>
+          <p class="about-body" id="aboutBodyText"></p>
+          <div class="status-note-box">
+            <div class="status-note-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <strong>Catatan Status Independen</strong>
+              <p id="aboutStatusNoteText"></p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Visi & Misi -->
+        <div class="vision-mission-col" id="visi-misi">
+          <article class="glass-card vision-card">
+            <span class="card-tag">VISI KAMI</span>
+            <p class="vision-quote" id="visionText"></p>
+          </article>
+
+          <article class="glass-card mission-card">
+            <span class="card-tag">MISI PERGERAKAN</span>
+            <ol class="mission-list" id="missionList"></ol>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM & CONTOH POSTINGAN INTERAKTIF -->
+    <section class="content-section" id="program">
+      <div class="section-header">
+        <span class="section-eyebrow">AKSI NYATA & KONTEN</span>
+        <h2 class="section-title">Program & Narasi Generasi Baru</h2>
+        <p class="section-desc">Setiap program adalah turunan langsung dari misi kami. Klik setiap program untuk melihat penjelasan lengkap serta contoh konten yang dapat langsung dikunjungi.</p>
+      </div>
+
+      <div class="programs-grid" id="programsGrid"></div>
+    </section>
+
+    <!-- SOROTAN KONTEN: embed Instagram / YouTube / TikTok / Discord (diatur dari Panel Admin) -->
+    <section class="content-section" id="konten">
+      <div class="section-header">
+        <span class="section-eyebrow">LIHAT LANGSUNG</span>
+        <h2 class="section-title" id="contentTitleText">Sorotan Konten</h2>
+        <p class="section-desc" id="contentDescText"></p>
+      </div>
+      <div class="highlights-grid" id="highlightsGrid"></div>
+    </section>
+
+    <!-- PRODUK & KATALOG LYNK.ID (Paste Link + Foto dari Admin Panel) -->
+    <section class="content-section" id="produk">
+      <div class="section-header row-between">
+        <div>
+          <span class="section-eyebrow">DUKUNG OPERASIONAL KOMUNITAS</span>
+          <h2 class="section-title">Produk & Publikasi Lynk.id</h2>
+          <p class="section-desc">Tautan resmi dan produk pendukung operasional swadaya Mentawai Project & @akugenerasibaru.id.</p>
+        </div>
+        <a href="https://lynk.id/mentawaiproject.id" target="_blank" rel="noopener noreferrer" class="btn-glass-secondary" id="sectionLynkLink">
+          <span>Lihat Semua di Lynk.id</span>
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+
+      <div class="products-grid" id="productsGrid"></div>
+    </section>
+
+    <!-- SUSUNAN PENGGERAK (TIM INTI) -->
+    <section class="content-section" id="tim">
+      <div class="section-header">
+        <span class="section-eyebrow">DI BALIK LAYAR</span>
+        <h2 class="section-title">Susunan Penggerak (Tim Inti)</h2>
+        <p class="section-desc" id="teamIntroText">Digagas dan dikelola langsung oleh mahasiswa dan pelajar SMA Mentawai yang bergerak secara swadaya dengan visi memajukan pendidikan dan literasi.</p>
+      </div>
+
+      <div class="founders-grid" id="foundersGrid"></div>
+    </section>
+
+    <!-- KOMUNITAS, DISCORD 3D & KONTAK -->
+    <section class="content-section" id="komunitas">
+      <div class="community-hub glass-surface">
+        <div class="hub-left">
+          <span class="emerald-chip"><span class="pulse-dot"></span> RUANG TUMBUH BERSAMA</span>
+          <h2 class="hub-title" id="hubTitleText">Terhubung dengan Ekosistem Mentawai Project</h2>
+          <p class="hub-desc" id="hubDescText"></p>
+
+          <div class="hub-3d-cards">
+            <!-- 3D Discord Card -->
+            <a href="https://discord.gg/sgAwpjBXr" target="_blank" rel="noopener noreferrer" class="social-3d-card discord-card" id="hubDiscordCard">
+              <div class="s3d-icon-wrap">
+                <img id="discordIconImg" class="s3d-img" alt="" hidden />
+                <svg viewBox="0 0 64 64" width="44" height="44" class="icon-3d-float">
+                  <defs>
+                    <linearGradient id="discBody2" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#9BA9FF"/>
+                      <stop offset="55%" stop-color="#5865F2"/>
+                      <stop offset="100%" stop-color="#2E38A6"/>
+                    </linearGradient>
+                  </defs>
+                  <rect x="4" y="4" width="56" height="56" rx="18" fill="url(#discBody2)"/>
+                  <path d="M41.6 22.1a24.8 24.8 0 0 0-6.1-1.9c-.3.5-.6 1.1-.8 1.6a23 23 0 0 0-6.8 0 16 16 0 0 0-.8-1.6 24.8 24.8 0 0 0-6.1 1.9c-3.9 5.8-4.9 11.4-4.4 17a25 25 0 0 0 7.5 3.8c.6-.8 1.1-1.7 1.6-2.6-.9-.3-1.7-.7-2.5-1.2.2-.2.4-.3.6-.5 4.8 2.2 10.1 2.2 14.8 0 .2.2.4.3.6.5-.8.5-1.6.9-2.5 1.2.5.9 1 1.8 1.6 2.6a25 25 0 0 0 7.5-3.8c.6-6.5-1-12.1-4.6-17ZM26.8 35.6c-1.5 0-2.7-1.4-2.7-3s1.2-3 2.7-3 2.7 1.4 2.7 3-1.2 3-2.7 3Zm10.4 0c-1.5 0-2.7-1.4-2.7-3s1.2-3 2.7-3 2.7 1.4 2.7 3-1.2 3-2.7 3Z" fill="#FFFFFF"/>
+                </svg>
+              </div>
+              <div class="s3d-info">
+                <span class="s3d-tag">SERVER KOMUNITAS</span>
+                <h3 id="discordNameText">Discord Generasi Baru</h3>
+                <p id="discordInfoText"></p>
+              </div>
+              <span class="s3d-arrow">↗</span>
+            </a>
+
+            <!-- 3D Lynk.id Card -->
+            <a href="https://lynk.id/mentawaiproject.id" target="_blank" rel="noopener noreferrer" class="social-3d-card lynk-card" id="hubLynkCard">
+              <div class="s3d-icon-wrap">
+                <img id="lynkIconImg" class="s3d-img" alt="" hidden />
+                <svg viewBox="0 0 64 64" width="44" height="44" class="icon-3d-float">
+                  <defs>
+                    <linearGradient id="lynkBody2" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#6EE7B7"/>
+                      <stop offset="55%" stop-color="#10B981"/>
+                      <stop offset="100%" stop-color="#065F46"/>
+                    </linearGradient>
+                  </defs>
+                  <rect x="4" y="4" width="56" height="56" rx="18" fill="url(#lynkBody2)"/>
+                  <g fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round">
+                    <path d="M27 37l-4.5 4.5a6.4 6.4 0 0 1-9-9L21 25a6.4 6.4 0 0 1 9 0"/>
+                    <path d="M37 27l4.5-4.5a6.4 6.4 0 0 1 9 9L43 39a6.4 6.4 0 0 1-9 0"/>
+                    <line x1="25" y1="39" x2="39" y2="25"/>
+                  </g>
+                </svg>
+              </div>
+              <div class="s3d-info">
+                <span class="s3d-tag">PORTAL TAUTAN & PRODUK</span>
+                <h3 id="lynkNameText">Lynk.id Mentawai Project</h3>
+                <p id="lynkInfoText"></p>
+              </div>
+              <span class="s3d-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hub-right">
+          <div class="social-list-box" id="socialLinksList"></div>
+          <div class="collab-box" id="collabBox" hidden>
+            <span class="card-tag">KOLABORASI</span>
+            <p id="collabText"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating Bottom Pill Navigation (Mobile PWA Bar) -->
+  <nav class="mobile-bottom-bar glass-pill" aria-label="Navigasi Cepat">
+    <a href="#beranda" class="m-nav-item active" data-nav="beranda">
+      <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+      <span>Beranda</span>
+    </a>
+    <a href="#program" class="m-nav-item" data-nav="program" data-sec="program">
+      <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg>
+      <span>Program</span>
+    </a>
+    <a href="#produk" class="m-nav-item" data-nav="produk" data-sec="produk">
+      <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <span>Produk</span>
+    </a>
+    <a href="#tim" class="m-nav-item" data-nav="tim" data-sec="tim">
+      <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <span>Tim</span>
+    </a>
+    <a href="#komunitas" class="m-nav-item" data-nav="komunitas" data-sec="komunitas">
+      <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <span>Gabung</span>
+    </a>
+  </nav>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© <span id="footerYear">2026</span> <strong>Mentawai Project</strong> — <span id="footerTaglineText">Gerakan Independen Anak Muda Mentawai.</span></p>
+      <p class="footer-sub">Dibangun dengan semangat <span>#GenerasiBaru</span> • Ruang Belajar, Bercerita &amp; Bertumbuh.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL / BOTTOM SHEET: PROGRAM DETAIL & CONTOH POSTINGAN -->
+  <div class="modal-backdrop" id="programModalBackdrop" hidden>
+    <div class="modal-sheet glass-surface" role="dialog" aria-modal="true" aria-labelledby="progModalTitle">
+      <div class="sheet-grabber"></div>
+      <div class="sheet-header">
+        <div>
+          <span class="emerald-chip" id="progModalStatus">STATUS</span>
+          <h3 class="sheet-title" id="progModalTitle">Nama Program</h3>
+        </div>
+        <button type="button" class="icon-btn glass-mini" id="closeProgramModalBtn" aria-label="Tutup Detail">✕</button>
+      </div>
+      <div class="sheet-body" id="progModalBody"></div>
+    </div>
+  </div>
+
+  <!-- MODAL: ADMIN LOGIN (Triggered by 3x Click on Brand Logo) -->
+  <div class="modal-backdrop login-backdrop" id="adminLoginBackdrop" hidden>
+    <div class="modal-dialog glass-surface" role="dialog" aria-modal="true" aria-labelledby="adminLoginTitle">
+      <div class="sheet-header">
+        <div>
+          <span class="emerald-chip">AKSES TERBATAS</span>
+          <h3 class="sheet-title" id="adminLoginTitle">Verifikasi Penggerak</h3>
+        </div>
+        <button type="button" class="icon-btn glass-mini" id="closeAdminLoginBtn" aria-label="Tutup">✕</button>
+      </div>
+      <form id="adminLoginForm" class="admin-login-form">
+        <p class="form-hint">Masukkan kata sandi admin Mentawai Project.</p>
+        <div class="field-group">
+          <label for="adminPasswordInput">Kata Sandi Admin</label>
+          <input type="password" id="adminPasswordInput" class="glass-input" placeholder="Masukkan kata sandi..." required autocomplete="current-password" />
+        </div>
+        <p class="error-text" id="adminLoginError" hidden></p>
+        <div class="form-actions">
+          <button type="submit" class="btn-emerald-pill full-w" id="adminLoginSubmitBtn">Masuk ke Panel Admin</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- FULL ADMIN PANEL DRAWER / MODAL -->
+  <div class="modal-backdrop admin-panel-backdrop" id="adminPanelBackdrop" hidden>
+    <div class="admin-panel-shell glass-surface" role="dialog" aria-modal="true" aria-labelledby="adminPanelHeading">
+      <div class="admin-topbar">
+        <div class="admin-title-wrap">
+          <span class="emerald-chip"><span class="pulse-dot"></span> PANEL KONTROL ADMIN</span>
+          <h2 id="adminPanelHeading">Kelola Konten Mentawai Project</h2>
+        </div>
+        <div class="admin-top-actions">
+          <span class="sync-badge" id="syncStatusBadge">Mode Lokal</span>
+          <button type="button" class="btn-emerald-pill" id="saveAllAdminBtn">Simpan &amp; Publikasikan</button>
+          <button type="button" class="icon-btn glass-mini" id="logoutAdminBtn" title="Keluar Mode Admin" aria-label="Keluar Mode Admin">Keluar</button>
+          <button type="button" class="icon-btn glass-mini" id="closeAdminPanelBtn" aria-label="Tutup Panel">✕</button>
+        </div>
+      </div>
+
+      <!-- Admin Sub-Tabs -->
+      <div class="admin-tabs" role="tablist">
+        <button type="button" class="admin-tab active" data-tab="tab-profil">Profil &amp; Statistik</button>
+        <button type="button" class="admin-tab" data-tab="tab-program">Program &amp; Contoh Link</button>
+        <button type="button" class="admin-tab" data-tab="tab-konten">Sorotan Konten</button>
+        <button type="button" class="admin-tab" data-tab="tab-produk">Produk Lynk.id</button>
+        <button type="button" class="admin-tab" data-tab="tab-tim">Tim Penggerak</button>
+        <button type="button" class="admin-tab" data-tab="tab-bagian">Bagian Halaman</button>
+        <button type="button" class="admin-tab" data-tab="tab-tautan">Tautan &amp; Backup</button>
+      </div>
+
+      <div class="admin-body" id="adminBodyContainer">
+        <!-- TAB 1: PROFIL & STATISTIK -->
+        <div class="admin-tab-pane active" id="tab-profil">
+          <div class="admin-card">
+            <h4>Identitas Utama &amp; Hero</h4>
+            <div class="admin-grid-2">
+              <div class="field-group">
+                <label>Badge Atas Hero</label>
+                <input type="text" id="admHeroBadge" class="glass-input" />
+              </div>
+              <div class="field-group">
+                <label>Hashtag Utama</label>
+                <input type="text" id="admHeroHashtag" class="glass-input" />
+              </div>
+            </div>
+            <div class="field-group">
+              <label>Kalimat Utama Hero (Headline)</label>
+              <textarea id="admHeroTitle" class="glass-input" rows="2"></textarea>
+            </div>
+            <div class="field-group">
+              <label>Subjudul Hero</label>
+              <textarea id="admHeroSubtitle" class="glass-input" rows="2"></textarea>
+            </div>
+          </div>
+
+          <div class="admin-card">
+            <div class="row-between">
+              <h4>Statistik Jangkauan (Followers, Anggota, dll)</h4>
+              <button type="button" class="btn-glass-secondary sm" id="addMetricBtn">+ Tambah Statistik</button>
+            </div>
+            <p class="form-hint">Ubah angka followers Instagram, anggota Circle WA, atau sembunyikan kartu tertentu.</p>
+            <div id="admMetricsList" class="stack-list"></div>
+          </div>
+
+          <div class="admin-card">
+            <h4>Tentang, Visi &amp; Misi</h4>
+            <div class="field-group">
+              <label>Paragraf Pembuka Tentang</label>
+              <textarea id="admAboutLead" class="glass-input" rows="3"></textarea>
+            </div>
+            <div class="field-group">
+              <label>Paragraf Lanjutan Tentang</label>
+              <textarea id="admAboutBody" class="glass-input" rows="2"></textarea>
+            </div>
+            <div class="field-group">
+              <label>Catatan Status Independen</label>
+              <textarea id="admAboutNote" class="glass-input" rows="2"></textarea>
+            </div>
+            <div class="field-group">
+              <label>Visi Komunitas</label>
+              <textarea id="admVision" class="glass-input" rows="2"></textarea>
+            </div>
+            <div class="row-between">
+              <label>Daftar Misi</label>
+              <button type="button" class="btn-glass-secondary sm" id="addMissionBtn">+ Tambah Misi</button>
+            </div>
+            <div id="admMissionsList" class="stack-list"></div>
+          </div>
+        </div>
+
+        <!-- TAB 2: PROGRAM & CONTOH POSTINGAN (PASTE LINK LANGSUNG) -->
+        <div class="admin-tab-pane" id="tab-program" hidden>
+          <div class="admin-card">
+            <div class="row-between">
+              <div>
+                <h4>Daftar Program &amp; Contoh Konten</h4>
+                <p class="form-hint">Paste link postingan Instagram / Reels / YouTube / artikel langsung di tiap program — kartu preview &amp; tombol klik akan otomatis muncul.</p>
+              </div>
+              <button type="button" class="btn-emerald-pill sm" id="addProgramBtn">+ Tambah Program</button>
+            </div>
+            <div id="admProgramsList" class="stack-list"></div>
+          </div>
+        </div>
+
+        <!-- TAB: SOROTAN KONTEN (PASTE LINK -> TAMPIL LANGSUNG) -->
+        <div class="admin-tab-pane" id="tab-konten" hidden>
+          <div class="admin-card">
+            <div class="row-between">
+              <div>
+                <h4>Sorotan Konten</h4>
+                <p class="form-hint">Paste link postingan Instagram, Reels, YouTube, TikTok, atau undangan Discord. Kontennya tampil langsung di halaman, bukan sekadar tulisan link. Link lain tampil sebagai kartu dengan gambar sampul.</p>
+              </div>
+              <button type="button" class="btn-emerald-pill sm" id="addHighlightBtn">+ Tambah Konten</button>
+            </div>
+            <div id="admHighlightsList" class="stack-list"></div>
+          </div>
+        </div>
+
+        <!-- TAB 3: PRODUK LYNK.ID (PASTE LINK + FOTO) -->
+        <div class="admin-tab-pane" id="tab-produk" hidden>
+          <div class="admin-card">
+            <div class="row-between">
+              <div>
+                <h4>Katalog Produk &amp; Link Lynk.id</h4>
+                <p class="form-hint">Paste link produk Lynk.id dan upload/tempel URL foto produk untuk ditampilkan di landing page.</p>
+              </div>
+              <button type="button" class="btn-emerald-pill sm" id="addProductBtn">+ Tambah Produk</button>
+            </div>
+            <div id="admProductsList" class="stack-list"></div>
+          </div>
+        </div>
+
+        <!-- TAB 4: TIM PENGGERAK -->
+        <div class="admin-tab-pane" id="tab-tim" hidden>
+          <div class="admin-card">
+            <div class="row-between">
+              <div>
+                <h4>Susunan Penggerak (Tim Inti)</h4>
+                <p class="form-hint">Edit nama, peran, fokus, upload foto baru, atau sembunyikan anggota tim.</p>
+              </div>
+              <button type="button" class="btn-emerald-pill sm" id="addFounderBtn">+ Tambah Penggerak</button>
+            </div>
+            <div id="admFoundersList" class="stack-list"></div>
+          </div>
+        </div>
+
+        <!-- TAB: BAGIAN HALAMAN (tampil/sembunyi seluruh bagian + teks bagian) -->
+        <div class="admin-tab-pane" id="tab-bagian" hidden>
+          <div class="admin-card">
+            <h4>Tampilkan / Sembunyikan Bagian Halaman</h4>
+            <p class="form-hint">Matikan bagian yang belum siap. Tautan menu ke bagian itu ikut hilang otomatis.</p>
+            <div id="admSectionsList" class="stack-list"></div>
+          </div>
+          <div class="admin-card">
+            <h4>Teks Bagian Tim, Komunitas &amp; Footer</h4>
+            <div class="field-group">
+              <label>Judul Bagian Sorotan Konten</label>
+              <input type="text" id="admContentTitle" class="glass-input" />
+            </div>
+            <div class="field-group">
+              <label>Deskripsi Bagian Sorotan Konten</label>
+              <textarea id="admContentDesc" class="glass-input" rows="2"></textarea>
+            </div>
+            <div class="field-group">
+              <label>Pengantar Bagian Tim</label>
+              <textarea id="admTeamIntro" class="glass-input" rows="2"></textarea>
+            </div>
+            <div class="field-group">
+              <label>Judul Bagian Komunitas</label>
+              <input type="text" id="admHubTitle" class="glass-input" />
+            </div>
+            <div class="field-group">
+              <label>Deskripsi Bagian Komunitas</label>
+              <textarea id="admHubDesc" class="glass-input" rows="3"></textarea>
+            </div>
+            <div class="field-group">
+              <label>Info Kolaborasi (kosongkan untuk menyembunyikan)</label>
+              <textarea id="admCollab" class="glass-input" rows="2"></textarea>
+            </div>
+            <div class="field-group">
+              <label>Teks Footer</label>
+              <input type="text" id="admFooter" class="glass-input" />
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 5: TAUTAN & BACKUP -->
+        <div class="admin-tab-pane" id="tab-tautan" hidden>
+          <div class="admin-card">
+            <h4>Tautan Utama (Discord, Lynk.id &amp; Sosial Media)</h4>
+            <div class="admin-grid-2">
+              <div class="field-group">
+                <label>Link Undangan Discord</label>
+                <input type="url" id="admDiscordUrl" class="glass-input" />
+              </div>
+              <div class="field-group">
+                <label>Link Utama Lynk.id</label>
+                <input type="url" id="admLynkUrl" class="glass-input" />
+              </div>
+            </div>
+            <div class="admin-grid-2">
+              <div class="field-group">
+                <label>Nama Kartu Discord</label>
+                <input type="text" id="admDiscordName" class="glass-input" />
+              </div>
+              <div class="field-group">
+                <label>Teks Kartu Discord (dipakai bila jumlah anggota tidak terbaca)</label>
+                <input type="text" id="admDiscordDesc" class="glass-input" />
+              </div>
+            </div>
+            <div class="admin-grid-2">
+              <div class="field-group">
+                <label>Gambar Discord (link URL, opsional)</label>
+                <input type="text" id="admDiscordImage" class="glass-input" placeholder="Kosong = ikon server otomatis" />
+              </div>
+              <div class="field-group">
+                <label>Atau upload gambar Discord</label>
+                <input type="file" id="admDiscordFile" accept="image/*" class="glass-input" />
+              </div>
+            </div>
+            <div class="admin-grid-2">
+              <div class="field-group">
+                <label>Nama Kartu Lynk.id</label>
+                <input type="text" id="admLynkName" class="glass-input" />
+              </div>
+              <div class="field-group">
+                <label>Teks Kartu Lynk.id</label>
+                <input type="text" id="admLynkDesc" class="glass-input" />
+              </div>
+            </div>
+            <div class="admin-grid-2">
+              <div class="field-group">
+                <label>Gambar Lynk.id (link URL, opsional)</label>
+                <input type="text" id="admLynkImage" class="glass-input" />
+              </div>
+              <div class="field-group">
+                <label>Atau upload gambar Lynk.id</label>
+                <input type="file" id="admLynkFile" accept="image/*" class="glass-input" />
+              </div>
+            </div>
+            <div class="row-between">
+              <label>Daftar Akun Media Sosial &amp; Kontak</label>
+              <button type="button" class="btn-glass-secondary sm" id="addSocialBtn">+ Tambah Tautan</button>
+            </div>
+            <div id="admSocialsList" class="stack-list"></div>
+          </div>
+
+          <div class="admin-card">
+            <h4>Status Penyimpanan</h4>
+            <div id="storageStatus"></div>
+          </div>
+
+          <div class="admin-card">
+            <h4>Cadangan &amp; Publikasi Tanpa Database</h4>
+            <p class="form-hint">Tombol "Unduh content.json" menyimpan seluruh isi website. Cara publikasi tanpa database: di GitHub, buka file <code>content.json</code> → ikon pensil → ganti isinya (atau upload ulang file ini) → Commit. Vercel otomatis memperbaruinya. Impor JSON untuk memulihkan.</p>
+            <div class="hero-cta-group">
+              <button type="button" class="btn-glass-secondary" id="exportConfigBtn">Unduh content.json</button>
+              <label class="btn-glass-secondary file-btn">
+                Impor JSON
+                <input type="file" id="importConfigInput" accept=".json" hidden />
+              </label>
+              <button type="button" class="btn-danger-soft" id="resetDefaultBtn">Reset ke Data Awal</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-banner" id="toastBanner" role="status" aria-live="polite" hidden></div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "name": "Mentawai Project — Generasi Baru Mentawai",
+  "short_name": "Mentawai",
+  "description": "Gerakan independen anak muda Mentawai: ruang belajar, bercerita, dan bertumbuh bersama.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#090C0B",
+  "background_color": "#090C0B",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Program & Narasi",
+      "short_name": "Program",
+      "url": "./index.html#program"
+    },
+    {
+      "name": "Gabung Discord",
+      "short_name": "Discord",
+      "url": "./index.html#komunitas"
+    }
+  ]
+}

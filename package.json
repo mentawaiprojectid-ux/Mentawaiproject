@@ -1,0 +1,7 @@
+{
+  "name": "mentawai-project-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page & PWA Mentawai Project (#GenerasiBaruMentawai)",
+  "engines": { "node": ">=18" }
+}
